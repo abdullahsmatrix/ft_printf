@@ -6,15 +6,17 @@
 /*   By: amamun <amamun@student.42warsaw.pl>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 22:55:20 by amamun            #+#    #+#             */
-/*   Updated: 2025/11/13 01:45:51 by amamun           ###   ########.fr       */
+/*   Updated: 2025/11/13 17:15:16 by amamun           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int ft_putchar_fd(char c)
+int	ft_putchar_fd(char c)
 {
-    char ch = (char) c;
-    write(1, &ch, 1);
-    return (1);
+	char	ch;
+
+	ch = (char) c;
+	write(1, &ch, 1);
+	return (1);
 }
