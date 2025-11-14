@@ -1,4 +1,4 @@
-### Woo! Hoo! nailed printf()
+### Woo! Hoo! ft_printf() worked!
 Another acomplishment at 42. Working on my ft_printf project was one of the most challenging but rewarding experiences in my C learning journey.
 At first, it seemed simple, "just recreate printf". 
 But once I really got into it, I realized how deep and intricate formatted output actually is.
