@@ -19,10 +19,12 @@ int	print_pointer(void *ptr)
 
 	address = (uintptr_t)ptr;
 	ret_val = 0;
-	ret_val += ft_putstr_fd("0x");
-	if (address == 0)
-		ret_val += ft_putchar_fd('0');
+	if (!address)
+		ret_val += ft_putstr_fd("(nil)");
 	else
+	{
+		ret_val += ft_putstr_fd("0x");
 		ret_val += print_hex_l(address);
+	}
 	return (ret_val);
 }
