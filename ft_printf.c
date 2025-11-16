@@ -35,8 +35,6 @@ static int	format_specifier(char specifier, va_list *args)
 		ret_val += print_hex_u(va_arg(*args, unsigned int));
 	else if (specifier == '%')
 		ret_val += ft_putchar_fd('%');
-	else
-		ret_val += write(1, "The specifier is incorrect", 27);
 	return (ret_val);
 }
 
